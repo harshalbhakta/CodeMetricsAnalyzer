@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ActionsAndRules.cpp" />
+    <ClCompile Include="CmdLineArgs.cpp" />
+    <ClCompile Include="ConfigureParser.cpp" />
+    <ClCompile Include="CustomNavigate.cpp" />
+    <ClCompile Include="DataStore.cpp" />
+    <ClCompile Include="Executive.cpp" />
+    <ClCompile Include="Fileinfo.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Nav.cpp" />
+    <ClCompile Include="Package.cpp" />
+    <ClCompile Include="PackageHolder.cpp" />
+    <ClCompile Include="Parser.cpp" />
+    <ClCompile Include="ScopeStack.cpp" />
+    <ClCompile Include="SemiExpression.cpp" />
+    <ClCompile Include="Show.cpp" />
+    <ClCompile Include="StringConversion.cpp" />
+    <ClCompile Include="Tokenizer.cpp" />
+    <ClCompile Include="WinTools.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ActionsAndRules.h" />
+    <ClInclude Include="AnalyzerExecutive.h" />
+    <ClInclude Include="CmdLineArgs.h" />
+    <ClInclude Include="ConfigureParser.h" />
+    <ClInclude Include="CustomNavigate.h" />
+    <ClInclude Include="DataStore.h" />
+    <ClInclude Include="Executive.h" />
+    <ClInclude Include="Fileinfo.h" />
+    <ClInclude Include="itokcollection.h" />
+    <ClInclude Include="Nav.h" />
+    <ClInclude Include="Package.h" />
+    <ClInclude Include="PackageHolder.h" />
+    <ClInclude Include="Parser.h" />
+    <ClInclude Include="ScopeStack.h" />
+    <ClInclude Include="SemiExpression.h" />
+    <ClInclude Include="Show.h" />
+    <ClInclude Include="StringConversion.h" />
+    <ClInclude Include="Tokenizer.h" />
+    <ClInclude Include="WinTools.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{31921524-4D9D-4B17-B136-FC62BDF8119A}</ProjectGuid>
+    <RootNamespace>CodeMetricsAnalyzer</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

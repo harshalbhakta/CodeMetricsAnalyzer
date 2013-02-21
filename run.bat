@@ -1,0 +1,1 @@
+Debug\CodeMetricsAnalyzer -r . Cmd* Par* Win* Tok* Semi* Pac*

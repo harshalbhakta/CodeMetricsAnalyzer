@@ -1,0 +1,1 @@
+CMA_VERBOSE -r . TestingName*
